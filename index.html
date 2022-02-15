@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ver0.css">
+    <script src="ver0.js" defer></script>
+    <title>Productivity Dash</title>
+</head>
+<body>
+    <div id="banner">
+        <h1>Productivity Dash</h1>
+    </div>
+
+   <!-- quote generator -->
+   <div id="quoteContainer">
+        <div id="quoteOutput">press the button to generate a quote</div>
+        <button id="quoteBtn">click for new quote</button>
+    </div>
+
+    <!-- pomodoro timer using javascript only - YT channel: "learn-webdev" -->
+   <div id="pomoContainer">
+        <p id="work" class="label">Work:</p>
+        <p id="break" class="label">Break:</p>
+        <p id="cycles" class="label">Cycles:</p>
+        
+        <!-- Work Timer -->
+        <div id="work-timer" class="timer">
+            <p id="w_mins">25</p>
+            <p class="semicolon">:</p>
+            <p id="w_secs">00</p>
+        </div>
+
+        <p id="counter" class="timer">0</p>
+        
+        <!-- Break Timer -->
+        <div id="break-timer" class="timer">
+            <p id="b_mins">5</p>
+            <p class="semicolon">:</p>
+            <p id="b_secs">00</p>
+        </div>
+
+        <button id="start" class="btn">Start</button>
+        <button id="pause" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+   </div>
+   
+   <!-- to do list -->
+   <div id="toDoContainer">
+       <h1>To Do List</h1>
+       <input id="inputField" type="text">
+       <button id="addToDo">+</button>
+       <div class="to-dos" id="toDoList">
+
+       </div>
+   </div>
+
+
+
+    <!-- calculator -->
+    <div id="calculator-grid">
+        <div class="calcOutput">
+            <div calc-previous-operand class="previous-operand"></div>
+            <div calc-current-operand class="current-operand"></div>
+        </div>
+        <button all-clear class="calcSpan-two">AC</button>
+        <button calc-delete>DEL</button>
+        <button calc-operation>÷</button>
+        <button calc-number>1</button>
+        <button calc-number>2</button>
+        <button calc-number>3</button>
+        <button calc-operation>*</button>
+        <button calc-number>4</button>
+        <button calc-number>5</button>
+        <button calc-number>6</button>
+        <button calc-operation>+</button>
+        <button calc-number>7</button>
+        <button calc-number>8</button>
+        <button calc-number>9</button>
+        <button calc-operation>-</button>
+        <button calc-number>.</button>
+        <button calc-number>0</button>
+        <button calc-equals class="calcSpan-two">=</button>
+        </div> 
+        
+        <!-- youtube motivation -->
+        <div id="ytContainer">
+            Music to work to:
+            <br><iframe width="340" height="191" src="https://www.youtube-nocookie.com/embed/n61ULEU7CO0" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <br>Rain and waves to work to:
+            <br><iframe width="340" height="191" src="https://www.youtube-nocookie.com/embed/hwsEjtlr9yw" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        </div>
+</body>
+<footer>by <a href="https://japhyhigg.com">JaphyHigg</a></footer>
+</html>
